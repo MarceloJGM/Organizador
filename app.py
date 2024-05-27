@@ -62,17 +62,6 @@ def Ordenar():
         except:
             print(f"El archivo '{archivo}' no se ha podido mover.")
 
-root = Tk()
-
-marco = ttk.Treeview(height=10, columns=0)
-marco.grid(row=0, column=0)
-marco.heading("#0", text="Nombre", anchor=CENTER)
-marco.heading("#1", text="Extensión", anchor=CENTER)
-boton = Button(root, text="Organizar")
-boton.grid(row=1, column=0, columnspan=2, sticky=W + E)
-record = marco.get_children()
-for elemento in record:
-    marco.delete
-
 if __name__ == "__main__":
-    root.mainloop()
+    Buscar'arch()
+    Ordenar()
